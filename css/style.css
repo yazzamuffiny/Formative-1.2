@@ -359,11 +359,15 @@ h3 {
   }
   .about-box {
     width: 75%;
-    margin: 10px 15%;
+    margin: 10px 12.5%;
+  }
+  .menu-buttons {
+    width: 100%;
+    margin-left: 0%;
   }
   .menu-box {
     width: 75%;
-    margin-left: 15%;
+    margin-left: 12.5%;
   }
   .menu-box .menu-card {
     min-width: 400px;
@@ -378,6 +382,9 @@ h3 {
   }
   .home-page h2 {
     font-size: 1.5em;
+  }
+  .menu-box .menu-card {
+    min-width: 300px;
   }
   .map-container {
     margin: 30px;

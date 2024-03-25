@@ -447,14 +447,18 @@ h3 {
     //about page
     .about-box {
         width: 75%;
-        margin: 10px 15%;
+        margin: 10px 12.5%;
     }
     //end about page
 
     //menu page
+    .menu-buttons{
+        width: 100%;
+        margin-left: 0%;
+    }
     .menu-box {
         width: 75%;
-        margin-left: 15%;
+        margin-left: 12.5%;
         .menu-card {
             min-width: 400px;
         }
@@ -479,6 +483,12 @@ h3 {
         }
     }
 
+    //menu page
+    .menu-box {
+        .menu-card {
+            min-width: 300px;
+        }
+    }
     //location
     .map-container {
         margin: 30px;
