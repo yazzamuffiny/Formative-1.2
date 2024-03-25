@@ -1,0 +1,510 @@
+//imported fonts
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+//variables
+$primary-color: #216131;
+$secondary-color: #F2FeF1;
+$header-font: 'Courier';
+$secondary-font: 'Caveat';
+$body-font: 'PT Sans';
+$box-shadow: 4px 4px 6px 0px rgba(0,0,0,0.12);
+
+
+
+// global reset
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $body-font;
+}
+// end global reset
+
+//GLOBAL RULES
+//background image
+body {
+    background-image: url("../imgs/bg-home.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    backdrop-filter: blur(3px);
+}
+//end background image
+
+// header rules
+h1 {
+    font-family: $header-font;
+    font-size: 5em;
+    font-weight: 200;
+}
+h2 {
+    font-family: $secondary-font;
+}
+h3 {
+    font-family: $header-font;
+    font-weight: 200;
+}
+//end header rules
+
+//page title styling
+.page-title {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+//end page title styling
+
+//page subheading sections
+.page-heading {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    h3 {
+        font-size: 2em;
+        font-weight: 200;
+    }
+    p {
+        width: 50%;
+    }
+}
+//end page subheading section
+
+// Responsive Nav Bar
+.nav-header {
+    background-color: $primary-color;
+    padding: 0 15px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        //logo
+        .nav-logo {
+            width: 100px;
+            height: auto;
+            margin-top: 10px;
+        }  
+        //nav items
+        .nav-items {
+            display: flex;
+            gap: 40px;
+             //nav items links
+             a {
+                color: white;
+                text-decoration: none;
+                font-size: 25px;
+                font-weight: 500;
+                font-family: $header-font;
+            }
+        }
+    }
+}
+
+//hamburger menu
+.hamburger {
+    display: none;
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+}
+//end nav bar
+
+//footer
+.footer {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    height: 100px;
+    background-color: $primary-color;
+    color: white;
+    .footer-container {
+        height: 100%;
+        display: flex;
+        padding: 10px;
+        text-align: center;
+        justify-content: space-between;
+        
+        .footer-copyright {
+            padding-top: 65px;
+        }
+        .footer-icons {
+            font-size: 2em;
+        }
+    }
+}
+//end footer
+//END GLOBAL RULES
+
+//PAGE SPECIFIC RULES
+
+//HOME PAGE
+//home page call to action
+.home-page {
+    width: 50%;
+    margin: 8.5% 25%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    h1 {
+        font-size: 7em;
+        text-align: center;
+    }
+    h2 {
+        align-items: center;
+        justify-content: center;
+        font-size: 2em;
+    }
+    a {
+        margin-top: 10px;
+        padding: 10px 20px;
+        text-decoration: none;
+        background-color: white;
+        color: $primary-color;
+        border: 2px solid $primary-color;
+        box-shadow: $box-shadow;
+        -webkit-box-shadow: $box-shadow;
+        -moz-box-shadow: $box-shadow;
+    }
+}
+//end home page call to action
+
+//reviews
+.review-box {
+    overflow: auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .review-card { 
+        flex-direction: row;
+        margin: 0 20px;
+        min-width: 400px;
+        height: 150px;
+        background-color: $secondary-color;
+        padding: 10px;
+        font-family: $body-font;
+        box-shadow: $box-shadow;
+        -webkit-box-shadow: $box-shadow;
+        -moz-box-shadow: $box-shadow;
+        .review-title {
+            font-size: 1.25em;
+        }
+        i {
+            color: gold;
+        }
+        
+    }
+}
+//end of reviews
+//END HOME PAGE
+
+//MENU PAGE
+//menu buttons
+
+.menu-buttons {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-left: 25%;
+    background-color: #ededed;
+    a {
+        padding: 10px 20px;
+        font-family: $secondary-font;
+        font-size: 2em;
+        color: #216131;
+    }
+}
+//end menu buttons
+
+//menu section headers
+.menu-subheader {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+}
+//end menu section headers
+
+//menu items grid
+.menu-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 25%;
+    width: 50%;
+    margin-bottom: 100px;
+    .menu-card {
+        margin: 10px;
+        width: 33%;
+        min-width: 300px;
+        .menu-title {
+            font-family: $header-font;
+            font-size: 1.25em;
+        }
+        
+    }
+ }
+//end menu items grid
+//END MENU PAGE
+
+//EVENTS PAGE
+//gallery grid
+.gallery-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 50%;
+    margin: 0% 25%;
+    margin-bottom: 50px;
+    .gallery-tile {
+        margin-top: 20px;
+        background-color: $secondary-color;
+        box-shadow: $box-shadow;
+        -webkit-box-shadow: $box-shadow;
+        -moz-box-shadow: $box-shadow;
+        width: 90%;
+        .gallery-img {
+            img {
+                width: 100%;
+            }
+        }
+        .gallery-txt {
+                text-align: center;
+            .gallery-title {
+                font-size: 1.5em;
+                font-family: $header-font;
+            }
+            .gallery-price {
+                font-family: $header-font;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
+//end gallery section
+
+//friday night section
+.friday-tile {
+    width: 50%;
+    margin: 10px 25%;
+    margin-bottom: 150px;
+    background-color: $secondary-color;
+    img {
+        width: 100%;
+    }
+    .friday-txt {
+        text-align: center;
+        .friday-title {
+            font-family: $header-font;
+            font-size: 1.5em;
+        }
+        .friday-info {
+            padding-bottom: 15px;
+        }
+    } 
+}
+// end friday nights
+//END EVENTS PAGE
+
+//ABOUT PAGE 
+.about-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 10px 25%;
+    .about-tile {
+        width: 100%;
+        margin: 20px;
+        h2, h3 {
+           font-size: 2em; 
+           text-align: center;
+        }
+        .about-contact-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+            i {
+                color: $primary-color;
+                padding: 0px 10px;
+            }
+        }
+        .about-img-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            img {
+                padding: 10px;
+                width: 100%;
+                transition: transform 0.2s;
+            }
+            img:hover {
+                transform: scale(1.1);
+            }
+         }
+    }
+}
+//END ABOUT PAGE
+
+//LOCATION PAGE
+//map
+.map-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+//end map
+
+//hours
+.hours-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    h3 {
+        padding-top: 20px;
+        font-size: 3em;
+    }
+    p {
+        font-size: 2em;
+    }
+}
+//end hours
+
+
+
+
+
+//MEDIA QUERIES
+
+@media screen and (max-width:768px) {
+    
+
+//background
+    body {
+        background-image: url(../imgs/bg-tablet.png);
+ }
+//nav bar
+    .hamburger {
+        display: flex;
+   }
+
+    .hamburger #closeHam{
+        display: none;
+   }
+
+   .nav-header{
+        nav {
+            .nav-items {
+                display: none;
+                //styling of open mobile
+                flex-direction: column;
+                align-items: center;
+                position: absolute;
+                right: 0;
+                top: 58px;
+                width: 100%;
+                height: calc(100vh - 58px);
+                background-color: white;
+                background-image: url(../imgs/nav-bg.jpg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                padding-top: 150px;
+                gap: 10vh;
+                a {
+                    color: black;
+                    font-size: 2em;
+                    font-weight: 700;
+                    background-color: rgba(255, 255, 255, 0);
+                }
+            }
+        }
+    }
+    //end nav bar
+
+    //gallery page
+    .gallery-box {
+        grid-template-columns: 1fr 1fr;
+        margin-left: 15%;
+        width: 75%; 
+    }
+    //end gallery page
+
+    //about page
+    .about-box {
+        width: 75%;
+        margin: 10px 15%;
+    }
+    //end about page
+
+    //menu page
+    .menu-box {
+        width: 75%;
+        margin-left: 15%;
+        .menu-card {
+            min-width: 400px;
+        }
+    }
+    //end menu page
+
+}
+
+@media screen and (max-width:425px) {
+
+    .footer {
+        height: 150px;
+    }
+
+    //home page
+    .home-page {
+        h1 {
+            font-size: 6em;
+        }
+        h2 {
+            font-size: 1.5em;
+        }
+    }
+
+    //location
+    .map-container {
+        margin: 30px;
+    }
+    .hours-box {
+        h3 {
+            font-size: 2.5em
+        }
+        p {
+            font-size: 1.5em;
+        }
+    }
+
+    //about page
+    .about-box {
+        .about-tile {
+            .about-img-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+
+
+
+
+
+
+
+}
