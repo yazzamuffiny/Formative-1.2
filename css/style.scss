@@ -120,7 +120,7 @@ h3 {
 //footer
 .footer {
     position: relative;
-    bottom: 0px;
+    bottom: 0;
     width: 100%;
     height: 100px;
     background-color: $primary-color;
@@ -237,6 +237,9 @@ h3 {
 //end menu section headers
 
 //menu items grid
+.lunch-section, .drinks-section{
+    display: none;
+}
 .menu-box {
     display: flex;
     justify-content: center;
@@ -274,6 +277,7 @@ h3 {
         -webkit-box-shadow: $box-shadow;
         -moz-box-shadow: $box-shadow;
         width: 90%;
+        cursor: pointer;
         .gallery-img {
             img {
                 width: 100%;
@@ -289,6 +293,34 @@ h3 {
                 font-family: $header-font;
                 padding-bottom: 10px;
             }
+        }
+    }
+}
+// gallery modal styling
+dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .gallery-tile {
+        width: 100%;
+        height: auto;
+        i {
+            position: fixed;
+            top: 0;
+            right: 0;
+            font-size: 50px;
+            padding: 20px;
+            cursor: pointer;
+            background-color: #ededed9c;
+        }
+        i:hover {
+            background-color: red;
+            color: white;
+        }
+        img {
+            width: 100%;
+            height: auto;
         }
     }
 }
